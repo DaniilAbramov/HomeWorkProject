@@ -4,6 +4,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class MilkCoffee {
-    Coffee coffee;
-    MilkCoffee milkCoffee;
+   private final Coffee coffee;
+   private MilkCoffee milkCoffee;
 }

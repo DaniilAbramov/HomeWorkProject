@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 //@AllArgsConstructor
 public class CoffeeShop {
-    private Coffee coffee;
+    private  Coffee coffee;
     private MilkCoffee milkCoffee;
     private CreamCoffee creamCoffee;
 

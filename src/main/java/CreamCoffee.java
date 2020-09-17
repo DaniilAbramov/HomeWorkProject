@@ -4,8 +4,8 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class CreamCoffee {
-    Coffee coffee;
-    CreamCoffee creamCoffee;
+    private final Coffee coffee;
+    private CreamCoffee creamCoffee;
 
     @Override
     public String toString() {

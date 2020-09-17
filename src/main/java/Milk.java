@@ -4,9 +4,9 @@ import lombok.RequiredArgsConstructor;
 @Data
 @RequiredArgsConstructor
 public class Milk implements Milky {
-private String milk;
+    private String milk;
 
-    public Milk(String milk) {
+    public Milk(String milk, String milkCoffee) {
     }
 
     @Override

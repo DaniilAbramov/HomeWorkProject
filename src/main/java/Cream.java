@@ -6,7 +6,7 @@ import lombok.RequiredArgsConstructor;
 public class Cream implements Milky {
     private String cream;
 
-    public Cream(String cream) {
+    public Cream(String cream,String creamCoffee) {
     }
 
     @Override
