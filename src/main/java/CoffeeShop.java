@@ -1,14 +1,10 @@
-import lombok.AllArgsConstructor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Scanner;
 
-//@AllArgsConstructor
 public class CoffeeShop {
-//    private  Coffee coffee;
-//    private MilkCoffee milkCoffee;
-//    private CreamCoffee creamCoffee;
+
 
     public static void main(String[] args) {
         Scanner scr = new Scanner(System.in);
