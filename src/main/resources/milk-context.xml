@@ -6,14 +6,12 @@
 
     <!-- Milk bean -->
     <bean id="milk" class="Milk">
-        <constructor-arg value="MilkCoffee"/>
-        <constructor-arg value="Milk"/>
+        <constructor-arg value="Prostokvashino"/>
     </bean>
 
     <!-- Cream bean -->
     <bean id="cream" class="Cream">
-        <constructor-arg value="CreamCoffee"/>
-        <constructor-arg value="Cream"/>
+        <constructor-arg value="Petmol"/>
     </bean>
 
     <!--    Coffee bean-->

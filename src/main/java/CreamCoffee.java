@@ -5,13 +5,10 @@ import lombok.Data;
 @AllArgsConstructor
 public class CreamCoffee {
     private final Coffee coffee;
-    private CreamCoffee creamCoffee;
+    private Cream cream;
 
     @Override
     public String toString() {
-        return "CreamCoffee{" +
-                "coffee=" + coffee +
-                ", creamCoffee=" + creamCoffee +
-                '}';
+        return "CreamCoffee" + coffee + " with " + cream;
     }
 }

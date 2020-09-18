@@ -1,16 +1,18 @@
+import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.RequiredArgsConstructor;
 
 @Data
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class Milk implements Milky {
-    private String milk;
-
-    public Milk(String milk, String milkCoffee) {
-    }
+    private final String milk;
 
     @Override
     public double getPercentage() {
         return 3.6;
+    }
+
+    @Override
+    public String toString() {
+        return "Milk" + " " + milk;
     }
 }

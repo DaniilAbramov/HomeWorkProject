@@ -1,13 +1,11 @@
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 
 @Data
-@RequiredArgsConstructor
+@AllArgsConstructor
 public class Cream implements Milky {
-    private String cream;
-
-    public Cream(String cream,String creamCoffee) {
-    }
+    private final String cream;
 
     @Override
     public double getPercentage() {
