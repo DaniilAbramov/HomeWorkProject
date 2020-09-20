@@ -9,7 +9,7 @@ public class MilkCoffee {
 
    @Override
    public String toString() {
-      return "CreamCoffee" + coffee + " with " + milk;
+      return "Milk" + coffee + " with " + milk;
    }
 
 }
