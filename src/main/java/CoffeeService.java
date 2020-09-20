@@ -7,7 +7,7 @@ public class CoffeeService {
 
     public void run() {
         Scanner scr = new Scanner(System.in);
-        System.out.println("Добро пожаловать в коффейню!" + "\n Выберите кофе:\n 1. Обычный кофе (Арабика)\n 2. Кофе с молоком\n 3. Кофе со сливками\n 4. Посмотреть ассортимент\n 0. Выход из меню");
+        System.out.println("Добро пожаловать в кофейню!" + "\n Выберите пункт из меню:\n 1. Обычный кофе (Арабика)\n 2. Кофе с молоком\n 3. Кофе со сливками\n 4. Посмотреть ассортимент\n 0. Выход из меню");
         ApplicationContext context = new ClassPathXmlApplicationContext("milk-context.xml");
         int choiceClient;
         while ((choiceClient = scr.nextInt()) != 0) {
@@ -27,11 +27,10 @@ public class CoffeeService {
                 System.out.println("1. Coffee - " + context.getBean(Coffee.class) +
                         "\n2. Milk - " + context.getBean(Milk.class) +
                         "\n3. Cream - " + context.getBean(Cream.class));
-            }
-            else {
+            } else {
                 System.err.println("Такого номера нет");
             }
-            System.out.println("Выберите пункт из меню!" + "\n Выберите кофе:\n 1. Обычный кофе (Арабика)\n 2. Кофе с молоком\n 3. Кофе со сливками\n 4. Посмотреть ассортимент\n 0. Выход из меню");
+            System.out.println("Выберите пункт из меню!" + "\n 1. Обычный кофе (Арабика)\n 2. Кофе с молоком\n 3. Кофе со сливками\n 4. Посмотреть ассортимент\n 0. Выход из меню");
         }
     }
 }

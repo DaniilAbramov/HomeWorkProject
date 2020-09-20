@@ -10,4 +10,9 @@ public class Cream implements Milky {
     public double getPercentage() {
         return 35.0;
     }
+
+    @Override
+    public String toString() {
+        return "Cream" + " " + cream;
+    }
 }
