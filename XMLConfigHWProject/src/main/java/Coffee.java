@@ -5,5 +5,4 @@ import lombok.Data;
 @AllArgsConstructor
 public class Coffee {
     private final String sortCoffee;
-
 }
