@@ -8,8 +8,8 @@ public class CoffeeShop {
     public static void main(String[] args) {
 
         ApplicationContext context = new ClassPathXmlApplicationContext("milk-context.xml");
-        context.getBean(CoffeeService.class);
+        context.getBean(CoffeeService.class).run();
 
-        new CoffeeService.run();
+
     }
 }
