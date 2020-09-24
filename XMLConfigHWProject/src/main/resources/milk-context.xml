@@ -4,17 +4,17 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!-- hw.itsjava.Milk bean -->
+    <!-- hw.itsjava.hw.itsjava.Milk bean -->
     <bean id="milk" class="hw.itsjava.Milk">
         <constructor-arg value="Prostokvashino"/>
     </bean>
 
-    <!-- hw.itsjava.Cream bean -->
+    <!-- hw.itsjava.hw.itsjava.Cream bean -->
     <bean id="cream" class="hw.itsjava.Cream">
         <constructor-arg value="Petmol"/>
     </bean>
 
-    <!--    hw.itsjava.Coffee bean-->
+    <!--    hw.itsjava.hw.itsjava.Coffee bean-->
     <bean id="coffee" class="hw.itsjava.Coffee">
         <constructor-arg value="Arabica"/>
     </bean>
@@ -27,6 +27,11 @@
     <bean id="creamCoffee" class="hw.itsjava.CreamCoffee">
         <constructor-arg ref="coffee"/>
         <constructor-arg ref="cream"/>
+    </bean>
+    <bean id="coffeeService" class="hw.itsjava.CoffeeService">
+        <constructor-arg ref="coffee"/>
+        <constructor-arg ref="milkCoffee"/>
+        <constructor-arg ref="creamCoffee"/>
     </bean>
 
 </beans>

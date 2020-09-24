@@ -1,3 +1,5 @@
+package hw.itsjava;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -13,6 +15,6 @@ public class Milk implements Milky {
 
     @Override
     public String toString() {
-        return "Milk" + " " + milk;
+        return "hw.itsjava.Milk" + " " + milk;
     }
 }

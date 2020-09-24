@@ -1,3 +1,5 @@
+package hw.itsjava;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -9,6 +11,6 @@ public class MilkCoffee {
 
    @Override
    public String toString() {
-      return "Milk" + coffee + " with " + milk;
+      return "hw.itsjava.Milk" + coffee + " with " + milk;
    }
 }

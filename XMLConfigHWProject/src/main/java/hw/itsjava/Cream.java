@@ -1,3 +1,5 @@
+package hw.itsjava;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -13,6 +15,6 @@ public class Cream implements Milky {
 
     @Override
     public String toString() {
-        return "Cream" + " " + cream;
+        return "hw.itsjava.Cream" + " " + cream;
     }
 }
