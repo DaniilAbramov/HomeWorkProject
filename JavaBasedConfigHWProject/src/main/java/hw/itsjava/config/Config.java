@@ -1,6 +1,6 @@
-package itsjava.config;
+package hw.itsjava.config;
 
-import itsjava.*;
+import hw.itsjava.*;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -21,14 +21,16 @@ public class Config {
     public Coffee coffee() {
         return new Coffee("Arabika");
     }
-
     @Bean("MilkCoffee")
     public MilkCoffee MilkCoffee(Milk milk, Coffee coffee) {
         return new MilkCoffee(coffee, milk);
     }
-
     @Bean("CreamCoffee")
     public CreamCoffee CreamCoffee(Cream cream, Coffee coffee) {
         return new CreamCoffee(coffee, cream);
+    }
+    @Bean("CoffeeService")
+    public CoffeeService CoffeeService(Coffee coffee, MilkCoffee milkCoffee, CreamCoffee creamCoffee) {
+        return new CoffeeService(coffee, milkCoffee, creamCoffee);
     }
 }
