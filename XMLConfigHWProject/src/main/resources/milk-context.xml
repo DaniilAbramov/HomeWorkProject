@@ -32,6 +32,8 @@
         <constructor-arg ref="coffee"/>
         <constructor-arg ref="milkCoffee"/>
         <constructor-arg ref="creamCoffee"/>
+        <constructor-arg ref="milk"/>
+        <constructor-arg ref="cream"/>
     </bean>
 
 </beans>

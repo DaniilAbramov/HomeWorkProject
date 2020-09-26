@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 public class CoffeeShop {
 
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(CoffeeService.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(CoffeeShop.class);
         context.getBean(CoffeeService.class).run();
     }
 }

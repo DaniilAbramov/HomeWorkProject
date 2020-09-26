@@ -22,15 +22,15 @@ public class Config {
         return new Coffee("Arabika");
     }
     @Bean("MilkCoffee")
-    public MilkCoffee MilkCoffee(Milk milk, Coffee coffee) {
+    public MilkCoffee milkCoffee(Milk milk, Coffee coffee) {
         return new MilkCoffee(coffee, milk);
     }
     @Bean("CreamCoffee")
-    public CreamCoffee CreamCoffee(Cream cream, Coffee coffee) {
+    public CreamCoffee creamCoffee(Cream cream, Coffee coffee) {
         return new CreamCoffee(coffee, cream);
     }
     @Bean("CoffeeService")
-    public CoffeeService CoffeeService(Coffee coffee, MilkCoffee milkCoffee, CreamCoffee creamCoffee) {
-        return new CoffeeService(coffee, milkCoffee, creamCoffee);
+    public CoffeeService coffeeService(Coffee coffee, MilkCoffee milkCoffee, CreamCoffee creamCoffee,Milk milk,Cream cream) {
+        return new CoffeeService(coffee, milkCoffee, creamCoffee,milk,cream);
     }
 }
