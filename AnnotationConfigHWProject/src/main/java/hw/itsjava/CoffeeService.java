@@ -1,20 +1,24 @@
 package hw.itsjava;
 
-import java.util.Scanner;
-public class CoffeeService {
-        private final Coffee coffee;
-        private final MilkCoffee milkCoffee;
-        private final CreamCoffee creamCoffee;
-        private final Milk milk;
-        private final Cream cream;
+import org.springframework.stereotype.Service;
 
-        public CoffeeService(Coffee coffee, MilkCoffee milkCoffee, CreamCoffee creamCoffee, Milk milk, Cream cream) {
-            this.coffee = coffee;
-            this.milkCoffee = milkCoffee;
-            this.creamCoffee = creamCoffee;
-            this.milk = milk;
-            this.cream = cream;
-        }
+import java.util.Scanner;
+
+@Service
+public class CoffeeService {
+    private final Coffee coffee;
+    private final MilkCoffee milkCoffee;
+    private final CreamCoffee creamCoffee;
+    private final Milk milk;
+    private final Cream cream;
+
+    public CoffeeService(Coffee coffee, MilkCoffee milkCoffee, CreamCoffee creamCoffee, Milk milk, Cream cream) {
+        this.coffee = coffee;
+        this.milkCoffee = milkCoffee;
+        this.creamCoffee = creamCoffee;
+        this.milk = milk;
+        this.cream = cream;
+    }
 
     public void run() {
         Scanner scr = new Scanner(System.in);
