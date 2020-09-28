@@ -1,12 +1,6 @@
 package hw.itsjava;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
 import java.util.Scanner;
-@ComponentScan({"hw.itsjava"})
 public class CoffeeService {
         private final Coffee coffee;
         private final MilkCoffee milkCoffee;
